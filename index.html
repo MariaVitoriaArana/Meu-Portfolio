@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
 
@@ -17,6 +17,8 @@
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <a href="#"class="theme-toggle" id="theme-toggle"> <i class="fa-solid fa-sun"></i></a>
+
         </div>
         
         <div class="menu-toggle" id="menu-toggle">
@@ -27,7 +29,7 @@
 
     <section class="hero" id="home">
             <div class="hero-content">
-                <h1>Hi I'm <span>Maria Vitória Arana</span><br>Web Developer</h1>
+                <h1>Olá, sou a <span>Maria Vitória Arana</span>.</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores, placeat esse eligendi, explicabo aliquam aliquid, commodi amet rerum doloribus non modi voluptas repudiandae! Eaque praesentium autem officiis dignissimos mollitia!
                 </p>
@@ -42,9 +44,10 @@
                     <i class="tech-icon" style="bottom: 0; left: 50%; transform: translatex(-50%);">🔌</i>
                     <i class="tech-icon" style="top: 50%; left: 0; transform: translateY(-50%);">🌐</i>
                 </div> 
-                <img src="IMG-20251225-WA0243~2.jpg" alt="Profile Picture" width="300px" class="profile-pic">
+                <img src="imagens/IMG-20251225-WA0243~2.jpg" alt="Profile Picture" width="300px" class="profile-pic">
             </div>
     </section>
+    <div class="section-divider"></div>
 
     
     <section class="about" id="about">
@@ -64,45 +67,21 @@
         </div>
 
         <!-- Skills -->
+        <div class="skills-container">
+            <h3 class="skills-title">Tecnologias</h3>
 
-        <div class="skills">
-            <div class="skill-item">
-                <div class="skill-name">
-                    <span>Java</span>
-                    <span>90%</span>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 90%;"></div>
-
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="skill-name">
-                    <span>Node.js</span>
-                    <span>85%</span>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 85%;"></div>
-
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <div class="skill-name">
-                    <span>Desing</span>
-                    <span>90%</span>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 90%;"></div>
-
-                </div>
+            <div class="skills-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+                <span>C</span>
+                <span>Java</span>
             </div>
         </div>
+
     </section>
+    <div class="section-divider"></div>
 
     <!-- Projetos -->
 
@@ -113,18 +92,17 @@
                 <!-- Projeto 1 -->
 
                 <div class="project-card">
-                    <img src="..." alt="Project 1" height="200px" class="project-img">
+                    <img src="imagens/Captura de tela 2026-06-17 015411.png" alt="Project 1" height="200px" class="project-img">
                     <div class="project-info">
-                        <h3 class="project-title">Campo Minado</h3>
+                        <h3 class="project-title">BOMB FIELD</h3>
                         <p class="project-description">O presente projeto Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, libero blanditiis.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">FireBase</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">javaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fa-solid fa-up-right-from-square"></i>Live Demo</a>
-                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
+                            <a href="https://github.com/MariaVitoriaArana/BombField" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
                         </div>
                     </div>
                 </div>
@@ -132,61 +110,64 @@
                 <!-- Projeto 2  -->
 
                 <div class="project-card">
-                    <img src="..." alt="Project 2" height="200px" class="project-img">
+                    <img src="imagens/batePapo.png" alt="Project 2" height="200px" class="project-img">
                     <div class="project-info">
                         <h3 class="project-title">Chat-Conversa</h3>
                         <p class="project-description">O presente projeto Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, libero blanditiis.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">FireBase</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">javaScript</span>
+                            <span class="tech-tag">MySQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fa-solid fa-up-right-from-square"></i>Live Demo</a>
-                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
+                            <a href="https://github.com/MariaVitoriaArana/Bate-Papo-Ingles" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
                         </div>                    
                     </div>
                 </div>
 
                 <!-- Projeto 3 -->
                 <div class="project-card">
-                    <img src="..." alt="Project 3" height="200px" class="project-img">
+                    <img src="imagens/adivinha.png" alt="Project 3" height="200px" class="project-img">
                     <div class="project-info">
                         <h3 class="project-title">Adivinha</h3>
                         <p class="project-description">O presente projeto Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, libero blanditiis.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">FireBase</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">javaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fa-solid fa-up-right-from-square"></i>Live Demo</a>
-                            <a href="#" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
+                            <a href="https://github.com/MariaVitoriaArana/Jogo-adivinhar" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
                         </div>                    
                     </div>
                 </div>
             </div>
     </section>
+    <div class="section-divider"></div>
 
     <!-- Contato -->
 
     <section class="contact" id="contact">
-        <h2 class="section-title">Get in Touch</h2>
-        <form class="contact-form" onsubmit="sendWhats(event)">
+        <div class="contact-container">       
+            <h2 class="section-title">Entre em Contato</h2>
+            <form class="contact-form" onsubmit="sendWhats(event)">
 
-            <div class="form-group">
-                <label for="name" class="form-label">Nome</label>
-                <input type="text" id="name" class="form-input" placeholder="Informe seu Nome" required>
-            </div>
+                <div class="form-group">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" id="name" class="form-input" placeholder="Informe seu Nome" required>
+                </div>
 
-            <div class="form-group">
-                <label for="message" class="form-label">Mensagem</label>
-                <textarea id="message" class="form-textarea" placeholder="Digite sua Mensagem" required></textarea>
-            </div>
-            
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+                <div class="form-group">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea id="message" class="form-textarea" placeholder="Digite sua Mensagem" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+        </div>   
     </section>
+    <div class="section-divider"></div>
 
     <!-- Rodapé -->
 
@@ -198,7 +179,7 @@
         <p class="copyright">&copy; 2026 Maria Vitória | All rights reserved</p>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="javaScript/script.js" defer></script>
     
 </body>
 </html>

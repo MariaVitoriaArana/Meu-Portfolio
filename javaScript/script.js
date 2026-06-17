@@ -52,3 +52,35 @@ function sendWhats(event){
     window.open(url, '_blank')
 
 }
+
+const themeBtn = document.getElementById("theme-toggle");
+
+const currentTheme = localStorage.getItem("theme");
+
+if(currentTheme === "dark"){
+    document.body.classList.add("dark");
+    themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+}
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark");
+
+    const darkMode =
+        document.body.classList.contains("dark");
+
+    if(darkMode){
+        themeBtn.innerHTML =
+        '<i class="fa-solid fa-moon"></i>';
+
+
+        localStorage.setItem("theme","dark");
+
+    }else{
+
+        themeBtn.innerHTML =
+        '<i class="fa-solid fa-sun"></i>';
+
+        localStorage.setItem("theme","light");
+    }
+});
