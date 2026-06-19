@@ -42,7 +42,7 @@ function sendWhats(event){
 
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
-    const telephone = '5544920049561';
+    const telephone = '5544999664672';
 
     const text =`Olá! Meu nome é ${name}, ${message}`
     const formattedMessage =  encodeURIComponent(text)
@@ -106,7 +106,7 @@ backToTop.addEventListener("mouseleave", () => {
 
 window.addEventListener("scroll", () => {
 
-    if(window.scrollY > 400){
+    if(window.scrollY > 200){
 
         backToTop.classList.add("show");
 
