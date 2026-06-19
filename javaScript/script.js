@@ -59,7 +59,7 @@ const currentTheme = localStorage.getItem("theme");
 
 if(currentTheme === "dark"){
     document.body.classList.add("dark");
-    themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    themeBtn.innerHTML = '<span class="material-symbols-outlined">moon_stars</span>';
 }
 
 themeBtn.addEventListener("click", () => {
@@ -71,7 +71,7 @@ themeBtn.addEventListener("click", () => {
 
     if(darkMode){
         themeBtn.innerHTML =
-        '<i class="fa-solid fa-moon"></i>';
+        '<span class="material-symbols-outlined">moon_stars</span>';
 
 
         localStorage.setItem("theme","dark");
@@ -79,8 +79,45 @@ themeBtn.addEventListener("click", () => {
     }else{
 
         themeBtn.innerHTML =
-        '<i class="fa-solid fa-sun"></i>';
+        '<span class="material-symbols-outlined">sunny</span>';
 
         localStorage.setItem("theme","light");
+    }
+});
+
+const backToTop = document.getElementById("backToTop");
+
+let hideTimer;
+let mouseOverButton = false;
+
+backToTop.addEventListener("mouseenter", () => {
+    mouseOverButton = true;
+});
+
+backToTop.addEventListener("mouseleave", () => {
+    mouseOverButton = false;
+
+    hideTimer = setTimeout(() => {
+        if (!mouseOverButton) {
+            backToTop.classList.remove("show");
+        }
+    }, 1000);
+});
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 400){
+
+        backToTop.classList.add("show");
+
+        clearTimeout(hideTimer);
+
+        hideTimer = setTimeout(() => {
+
+            if(!mouseOverButton){
+                backToTop.classList.remove("show");
+            }
+
+        }, 1000);
     }
 });

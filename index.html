@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://jsdelivr.net">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
 
     <nav>
-        <div class="logo">Portfólio</div>
+        <div class="logo">Maria Vitória</div>
         
         <div class="nav-links">
             <a href="#home">Início</a>
@@ -19,7 +21,7 @@
             <a href="#contact">Contato</a>
         </div>
 
-        <a href="#"class="theme-toggle" id="theme-toggle"> <i class="fa-solid fa-sun"></i></a>
+        <a href="#"class="theme-toggle" id="theme-toggle"> <span class="material-symbols-outlined">sunny</span></a>
         
         <div class="menu-toggle" id="menu-toggle">
             <i class="fa-solid fa-bars"></i>
@@ -33,17 +35,14 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores, placeat esse eligendi, explicabo aliquam aliquid,
                 </p>
-                <a href="#contact" class="cta-button">Entre em contato</a>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button">Entre em contato</a>
+                    <a href="imagens/MeuCurriculo.pdf" target="_blank" class="cta-button"> Ver Currículo</a>
+                </div>
             </div>
 
             <div class="profile-container">
                 <div class="profile-border"></div>
-                <div class="tech-icons">
-                    <i class="tech-icon" style="top: 0; left: 50%; transform: translateX(-50%);">💻</i>
-                    <i class="tech-icon" style="top: 50%; right: 0; transform: translateY(-50%);">📱</i>
-                    <i class="tech-icon" style="bottom: 0; left: 50%; transform: translatex(-50%);">🔌</i>
-                    <i class="tech-icon" style="top: 50%; left: 0; transform: translateY(-50%);">🌐</i>
-                </div> 
                 <img src="imagens/IMG-20251225-WA0243~2.jpg" alt="Profile Picture" width="300px" class="profile-pic">
             </div>
     </section>
@@ -132,7 +131,7 @@
                 <!-- Projeto 1 -->
 
                 <div class="project-card">
-                    <img src="imagens/Captura de tela 2026-06-17 015411.png" alt="Project 1" height="200px" class="project-img">
+                    <img src="imagens/Captura de tela 2026-06-17 015411.png" target="_blank" alt="Project 1" height="200px" class="project-img">
                     <div class="project-info">
                         <h3 class="project-title">BOMB FIELD</h3>
                         <p class="project-description">O presente projeto Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, libero blanditiis.</p>
@@ -142,7 +141,7 @@
                             <span class="tech-tag">javaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/MariaVitoriaArana/BombField" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
+                            <a href="https://github.com/MariaVitoriaArana/BombField" target="_blank" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +160,7 @@
                             <span class="tech-tag">MySQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/MariaVitoriaArana/Bate-Papo-Ingles" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
+                            <a href="https://github.com/MariaVitoriaArana/Bate-Papo-Ingles" target="_blank" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
                         </div>                    
                     </div>
                 </div>
@@ -178,7 +177,7 @@
                             <span class="tech-tag">javaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/MariaVitoriaArana/Jogo-adivinhar" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
+                            <a href="https://github.com/MariaVitoriaArana/Jogo-adivinhar" target="_blank" class="project-link"><i class="fa-brands fa-github"></i>Code</a>
                         </div>                    
                     </div>
                 </div>
@@ -188,38 +187,94 @@
 
     <!-- Contato -->
 
-    <section class="contact" id="contact">
-        <div class="contact-container">       
+<section class="contact" id="contact">
+
+    <div class="contact-wrapper">
+
+        <!-- Cards -->
+        <div class="contact-cards">
+
+            <a href="https://linkedin.com/in/maria-vitoria-arana-almeida-882aba355" target="_blank" class="contact-card">
+                <i class="fa-brands fa-linkedin"></i>
+                <div>
+                    <h3>LinkedIn</h3>
+                    <p>https://linkedin.com/in/maria-vitoria-arana-almeida-882aba355</p>
+                </div>
+            </a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aranavitoriamv@gmail.com" target="_blank" class="contact-card">                <i class="fa-regular fa-envelope"></i>
+                <div>
+                    <h3>Email</h3>
+                    <p>aranavitoriamv@gmail.com</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/5544920049561" target="_blank" class="contact-card">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div>
+                    <h3>WhatsApp</h3>
+                    <p>(44) 9 2004-9561</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/MariaVitoriaArana" target="_blank" class="contact-card">
+                <i class="fa-brands fa-github"></i>
+                <div>
+                    <h3>GitHub</h3>
+                    <p>https://github.com/MariaVitoriaArana</p>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Formulário -->
+        <div class="contact-container">
+
             <h2 class="section-title">Entre em Contato</h2>
+
             <form class="contact-form" onsubmit="sendWhats(event)">
 
                 <div class="form-group">
-                    <label for="name" class="form-label">Nome</label>
-                    <input type="text" id="name" class="form-input" placeholder="Informe seu Nome" required>
+                    <label class="form-label">Nome</label>
+                    <input type="text" id="name" class="form-input" placeholder="Informe seu nome">
                 </div>
 
                 <div class="form-group">
-                    <label for="message" class="form-label">Mensagem</label>
-                    <textarea id="message" class="form-textarea" placeholder="Digite sua Mensagem" required></textarea>
+                    <label class="form-label">Mensagem</label>
+                    <textarea id="message" class="form-textarea" placeholder="Digite sua mensagem"></textarea>
                 </div>
-                
-                <button type="submit" class="submit-btn">Enviar</button>
+
+                <button type="submit" class="submit-btn">
+                    Enviar
+                </button>
+
             </form>
-        </div>   
-    </section>
+
+        </div>
+
+    </div>
+</section>
     <div class="section-divider"></div>
+
 
     <!-- Rodapé -->
 
     <footer>
         <div class="social-links">
-            <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/MariaVitoriaArana" target="_blank" class="social-link"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/maria-vitoria-arana-almeida-882aba355" target="_blank" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aranavitoriamv@gmail.com" target="_blank" class="social-link"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://wa.me/5544920049561" target="_blank"class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="imagens/MeuCurriculo.pdf" target="_blank" class="social-link"><i class="bi bi-file-earmark-person"></i></a>
+
         </div>
-        <p class="copyright">&copy; 2026 Maria Vitória | All rights reserved</p>
+        <p class="copyright">&copy; 2026 Maria Vitória | Todos os direitos reservados</p>
     </footer>
 
     <script src="javaScript/script.js" defer></script>
     
+    <a href="#home" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
 </body>
 </html>
+
+
