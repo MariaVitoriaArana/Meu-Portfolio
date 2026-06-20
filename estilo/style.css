@@ -353,7 +353,6 @@ body.dark .about{
     margin-bottom: 1.5rem;
     line-height: 1.6;
     color: #595555;
-    text-align: justify;
 
 }
 
@@ -797,6 +796,16 @@ body.dark .contact-card:hover{
 .contact-container{
     flex: 1;
     max-width: 850px;
+}
+
+.contact-card p,
+.project-description,
+.about-text p,
+.education-place,
+.education-course{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .social-card{
