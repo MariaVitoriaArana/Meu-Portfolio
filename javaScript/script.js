@@ -42,7 +42,7 @@ function sendWhats(event){
 
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
-    const telephone = '5544999664672';
+    const telephone = '5544920049561';
 
     const text =`Olá! Meu nome é ${name}, ${message}`
     const formattedMessage =  encodeURIComponent(text)

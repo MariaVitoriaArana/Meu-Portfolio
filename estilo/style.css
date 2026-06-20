@@ -118,7 +118,7 @@ body.dark .logo{
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
-    padding:  110px 5rem 8%;
+    padding: 110px 8% 8%;
 }
 
 .hero-content{
@@ -1214,10 +1214,18 @@ nav{
     .hero{
         flex-direction: column-reverse; /* inverte a ordem */
         text-align: center;
-        padding-top: 120px;
-        gap: 2rem;
-    }
+        align-items: center;
+        justify-content: center;
+        padding: 120px 20px 50px;
 
+    }
+    .profile-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
     .hero-content{
         margin-bottom: 0;
     }
