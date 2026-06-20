@@ -10,7 +10,7 @@
     --dark-bg: #faf5ff;        /* fundo principal */
     --darker-bg: #f3e8ff;      /* fundo secundário */
 
-    --text-color: #111111;
+    --text-color: #4c4c4c;
 }
 
 body.dark{
@@ -123,7 +123,7 @@ body.dark .logo{
 
 .hero-content{
     animation: fadeUp 1s ease;
-    max-width: 600px;
+    max-width: 700px;
     z-index: 2;
 }
 
@@ -1135,7 +1135,7 @@ body.dark #backToTop:hover{
         top: 90px; 
         right: 5%; 
         width: 200px; 
-        background: linear-gradient( 45deg, #ffafef, #e4e4e4 ); 
+        background: linear-gradient( 45deg, #d3afff, #faf4ff ); 
         border: none; border-radius: 10px; 
         padding: 1rem; 
         flex-direction: column; 

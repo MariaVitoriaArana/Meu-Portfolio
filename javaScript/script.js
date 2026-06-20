@@ -1,9 +1,29 @@
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
-menuToggle.addEventListener("click", () => {
+menuToggle.addEventListener("click", (e) => {
+    e.stopPropagation(); // impede que o clique feche imediatamente
     navLinks.classList.toggle("active");
 });
+
+// Fecha ao clicar em qualquer lugar fora do menu
+document.addEventListener("click", (e) => {
+
+    const clicouNoMenu = navLinks.contains(e.target);
+    const clicouNoBotao = menuToggle.contains(e.target);
+
+    if (!clicouNoMenu && !clicouNoBotao) {
+        navLinks.classList.remove("active");
+    }
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
+
 
 document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
